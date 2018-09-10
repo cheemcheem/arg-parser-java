@@ -1,3 +1,5 @@
+package java.com.kathancheema.personal.argparser.model.old;
+
 import java.io.File;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -39,7 +41,6 @@ public class Parser {
 		scanner.close();
 		return new ArgHandler(configurationMethodMap);
 	}
-
 
 	/**
 	 * Gets the method object from the line in.

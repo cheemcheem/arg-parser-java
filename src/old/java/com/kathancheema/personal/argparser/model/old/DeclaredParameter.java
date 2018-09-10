@@ -1,10 +1,12 @@
+package java.com.kathancheema.personal.argparser.model.old;
+
 /**
  * For Parameters like "-t" or "--test"
  */
 public class DeclaredParameter {
 	private final String paramVal;
 
-	DeclaredParameter(String paramVal) {
+	public DeclaredParameter(String paramVal) {
 		this.paramVal = paramVal;
 	}
 

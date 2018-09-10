@@ -1,3 +1,5 @@
+package java.com.kathancheema.personal.argparser.model.old;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -9,7 +11,7 @@ import java.util.Map;
 public class ArgHandler {
 	private final Map<ArgConfiguration, Method> configurations;
 
-	ArgHandler(Map<ArgConfiguration, Method> configurations) throws IllegalArgumentException {
+	public ArgHandler(Map<ArgConfiguration, Method> configurations) throws IllegalArgumentException {
 		ArgConfiguration[] argConfigurations = new ArgConfiguration[configurations.size()];
 		checkArgConfigurations(configurations.keySet().toArray(argConfigurations));
 		this.configurations = configurations;

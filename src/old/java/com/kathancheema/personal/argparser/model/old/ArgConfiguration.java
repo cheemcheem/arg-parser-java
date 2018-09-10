@@ -1,3 +1,5 @@
+package java.com.kathancheema.personal.argparser.model.old;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -5,12 +7,12 @@ import java.util.Arrays;
 /**
  * Tells you whether the args given match the arg configuration.
  */
-class ArgConfiguration {
+public class ArgConfiguration {
 	private final Object[] objects;
 	private final Class[] types;
 	private final Method[] valueOfMethods;
 
-	ArgConfiguration(Class[] types, Object[] objects) throws NoSuchMethodException {
+	public ArgConfiguration(Class[] types, Object[] objects) throws NoSuchMethodException {
 		checkArgs(types, objects);
 		this.valueOfMethods = getValueMethods(types);
 		this.types = types;
