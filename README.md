@@ -12,7 +12,22 @@ This is done by adding mappings in a separate configuration file.
 
 
 ### Usage
+#### Compile:
+```bash
+jar cf ArgParser.jar src
+```
 
+#### Use:
+```java
+import ArgParser.Parser;
+
+class Main {
+	public static void java(String[] args){
+		// Read 'inputs/Arguments.args' and run configuration that matches 'args'
+		Parser.parseInputFromFile("inputs/Arguments.args").run(args);
+	}
+}
+```
 
 
 ### Limitations
